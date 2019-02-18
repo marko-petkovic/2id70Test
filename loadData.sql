@@ -5,3 +5,9 @@
 --   CourseOffers.table, CourseRegistrations.table, Courses.table, Degrees.table
 --   StudentAssistants.table, StudentRegistrationsToDegrees.table, Students.table
 --   TeacherAssignmentsToCourses.table, Teachers.table
+-- Don't forget to analyze at the end. It can make a difference in query performance.
+-- Example:
+
+COPY myPhonebook(id, name, address,phoneNumber) FROM '/var/lib/postgresql/tables/myphonebook.table' DELIMITER ',' CSV HEADER;
+
+ANALYZE VERBOSE
